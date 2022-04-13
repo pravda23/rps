@@ -1,0 +1,126 @@
+:root {
+    --color1: black;
+    --color2: limegreen;
+    --color3: black;
+    --color4: darkgray;
+}
+
+body {
+    background-color: var(--color2);
+    font-family: 'Courier', 'Arial';
+    color: var(--color2);
+    font-size: 2em;
+}
+
+.outer {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    background-color: var(--color2);
+    margin: 1%;
+    padding: 1%;
+}
+
+.button-container {
+    display: inherit;
+    justify-content: center;
+    font-weight: bold;
+    padding: 5%;
+    padding-bottom: 0px;
+    background-color: var(--color1)
+}
+
+.button {
+    padding: .5em;
+    font-size: 1.8em;
+}
+
+.playbuttonsbox {
+    display: inherit;
+    justify-content: space-evenly;
+    align-items: baseline;
+    padding: 5%;
+    padding-top: 0px;
+    scroll-padding-bottom: 0px;
+    background-color: var(--color1)
+}
+
+.p1_rpstitle,
+.p2_rpstitle,
+.p1_score,
+.p2_score {
+    border: none;
+    color: inherit;
+    background-color: var(--color1);
+    font-family: inherit;
+    font-size: inherit;
+    width: 100%;
+}
+
+.p1_score,
+.p2_score {
+    font-size: 2em;
+    padding: 5%,
+}
+
+.p1_playbuttons,
+.p2_playbuttons {
+    display: inherit;
+    flex-direction: column;
+    justify-content: center;
+    align-items: baseline;
+    padding: 5%;
+}
+
+
+/* .onlybtn: wrapper to prevent rps_title click functionality */
+
+.onlybtn {
+    padding: 0px;
+    margin: 0px;
+    width: auto;
+}
+
+.p2_playbuttons {
+    opacity: 50%;
+}
+
+.p1_rpsbutton {
+    border: 1px solid var(--color2);
+    color: inherit;
+    background-color: var(--color1);
+    font-family: inherit;
+    font-size: inherit;
+    width: 100%;
+}
+
+.p1_rpsbutton:hover {
+    color: var(--color1);
+    background-color: var(--color2);
+}
+
+.p2_rpsbutton {
+    border: 1px solid var(--color2);
+    color: inherit;
+    background-color: var(--color1);
+    font-family: inherit;
+    font-size: inherit;
+    width: 100%;
+}
+
+.results-text-box {
+    background-color: var(--color3);
+    display: inherit;
+    padding: 2%;
+    justify-content: center;
+    border: 1px solid var(--color1);
+}
+
+.reset {
+    border: 1px solid var(--color1);
+    color: var(--color1);
+    background-color: var(--color2);
+    font-family: inherit;
+    font-size: inherit;
+    width: 100%;
+}
